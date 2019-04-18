@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="56dp"
+        android:paddingRight="24dp">
+
+        <!--  Gambar  -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="isi username"
+
+            android:src="@drawable/ic_welcome_logo" />
+
+        <!--  Email Label -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/white"
+            android:hint="Username"
+            android:inputType="text"
+            android:textColorHint="#fff" />
+
+        <!--  Password Label  -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/white"
+            android:hint="Password"
+            android:inputType="text"
+            android:textColorHint="#fff" />
+
+        <!--  button login  -->
+        <Button
+            android:id="@+id/push_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <!--  or  -->
+        <TextView
+            android:id="@+id/link_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/or"
+            android:textColor="@color/white"
+            android:textSize="16dip" />
+
+        <!--  button fb  -->
+        <Button
+            android:id="@+id/connectFB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button"
+            android:drawableLeft="@drawable/ic_welcome_fb_login"
+            android:gravity="center"
+            android:paddingLeft="45dp"
+            android:paddingRight="35dp"
+            android:text="CONNECT WITH FACEBOOK"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <!--  regist  -->
+        <TextView
+            android:id="@+id/regist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="16dip" />
+
+    </LinearLayout>
+</LinearLayout>
